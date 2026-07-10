@@ -1,4 +1,4 @@
-const cacheName = 'fly-gun-v4';
+const cacheName = 'fly-gun-v5';
 const assets = [
   './',
   './index.html',
@@ -12,7 +12,8 @@ const assets = [
   './delta-logo.png',
   './hawaiian-logo.png',
   './tsa-logo.png',
-  './united-logo.png'
+  './united-logo.png',
+  './breeze-logo.png'
 ];
 
 self.addEventListener('install', e => {
