@@ -1,4 +1,4 @@
-const cacheName = 'fly-gun-v7';
+const cacheName = 'fly-gun-v8';
 const assets = [
   './',
   './index.html',
