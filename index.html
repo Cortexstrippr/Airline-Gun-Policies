@@ -109,3 +109,120 @@ console.log('ServiceWorker registration failed: ', err);
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Flying Gun Policies</title>
+
+  <link rel="manifest" href="manifest.json" />
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+
+  <style type="text/css">
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        margin: 0; padding: 0; 
+        background-color: #f0f2f5; 
+        color: #333;
+    }
+    header {
+        background-color: #1a1a1a; color: white; padding: 15px;
+        text-align: center; font-weight: bold; font-size: 1.2rem;
+        position: sticky; top: 0; z-index: 100;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .container {
+        padding: 15px;
+    }
+    .section-title {
+        font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;
+        color: #666; margin: 20px 0 10px 5px; font-weight: bold;
+    }
+    
+    /* The App Drawer Grid Layout */
+    .app-drawer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+    
+    /* App Icon Card Style */
+    .btn-logo {
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        background-color: #ffffff; border-radius: 14px; padding: 12px 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.06); text-decoration: none; color: #333;
+        border: 1px solid #eaeaea; text-align: center;
+    }
+    
+    /* Logo Image Style */
+    .btn-logo img {
+        width: 50px; height: 50px; object-fit: contain; margin-bottom: 8px;
+    }
+    
+    /* Label under the logo */
+    .btn-logo span {
+        font-size: 0.75rem; font-weight: 600; line-height: 1.2;
+    }
+  </style>
+</head>
+<body>
+
+<header>Flying Gun Policies</header>
+
+<div class="container">
+    
+    <div class="section-title">General Regulations</div>
+    <div class="app-drawer">
+        <a href="https://www.usconcealedcarry.com/resources/ccw_reciprocity_map/" class="btn-logo">
+            <img src="ccw-logo.png" alt="CCW Reciprocity" />
+            <span>CCW Map</span>
+        </a>
+        <a href="https://www.atf.gov/media/22376/download" class="btn-logo">
+            <img src="atf-logo.png" alt="ATF Form 20" />
+            <span>ATF Form 20</span>
+        </a>
+        <a href="https://www.tsa.gov/travel/transporting-firearms-and-ammunition" class="btn-logo">
+            <img src="tsa-logo.png" alt="TSA Policies" />
+            <span>TSA Policy</span>
+        </a>
+    </div>
+
+    <div class="section-title">Airline Policies</div>
+    <div class="app-drawer">
+        <a href="https://www.alaskaair.com/content/travel-info/baggage/special-baggage/transporting-firearms" class="btn-logo">
+            <img src="alaska-logo.png" alt="Alaska Airlines" />
+            <span>Alaska</span>
+        </a>
+        <a href="https://www.aa.com/i18n/travel-info/baggage/specialty-items.jsp" class="btn-logo">
+            <img src="aa-logo.png" alt="American Airlines" />
+            <span>American</span>
+        </a>
+        <a href="https://www.delta.com/us/en/baggage/special-items/sporting-equipment#firearms" class="btn-logo">
+            <img src="delta-logo.png" alt="Delta Airlines" />
+            <span>Delta</span>
+        </a>
+        <a href="https://www.hawaiianairlines.com/content/travel-info/baggage/special-baggage/transporting-firearms" class="btn-logo">
+            <img src="hawaiian-logo.png" alt="Hawaiian Airlines" />
+            <span>Hawaiian</span>
+        </a>
+        <a href="https://www.united.com/en/us/fly/baggage/firearms.html" class="btn-logo">
+            <img src="united-logo.png" alt="United Airlines" />
+            <span>United</span>
+        </a>
+        <a href="https://www.flybreeze.com/support?a=Sporting-Equipment-Firearms---id--ntt_zScURLS2OFsLe8ahwg" class="btn-logo">
+            <img src="breeze-logo.png" alt="Breeze Airlines" />
+            <span>Breeze</span>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
