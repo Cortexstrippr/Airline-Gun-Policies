@@ -1,4 +1,4 @@
-const cacheName = 'fly-gun-v1';
+const cacheName = 'fly-gun-v2';
 const assets = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png', './atf-logo.png'];
 
 self.addEventListener('install', e => {
