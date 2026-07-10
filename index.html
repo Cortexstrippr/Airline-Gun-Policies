@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<head>
+<head><script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+  }
+</script>
+  
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <title>Flying Gun Policies</title>
 
