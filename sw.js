@@ -12,7 +12,11 @@ const assets = [
   './delta-logo.png',
   './hawaiian-logo.png',
   './tsa-logo.png',
-  './united-logo.png'
+  './united-logo.png',
+  './allegiant-logo.png',
+  './frontier-logo.png',
+  './jetblue-logo.png',
+  './southwest-logo.png'
 ];
 
 // 1. Install Event (Downloads new files & forces takeover)
