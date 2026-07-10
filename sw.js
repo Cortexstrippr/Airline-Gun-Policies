@@ -1,5 +1,5 @@
 const cacheName = 'fly-gun-v1';
-const assets = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png'];
+const assets = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png', './atf-logo.png'];
 
 self.addEventListener('install', e => {
 e.waitUntil(caches.open(cacheName).then(cache => cache.addAll(assets)));
