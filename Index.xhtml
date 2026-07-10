@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Flying Gun Policies</title>
+
+<!-- PWA Manifest Link -->
+<link rel="manifest" href="manifest.json" />
+
+<style type="text/css">
+body {
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+margin: 0; padding: 0; background-color: #f0f2f5;
+}
+header {
+background-color: #1a1a1a; color: white; padding: 20px;
+text-align: center; font-weight: bold; font-size: 1.2em;
+position: sticky; top: 0; z-index: 100;
+}
+.container { padding: 15px; }
+.section-title { font-size: 0.8em; color: #666; margin: 20px 0 10px 5px; text-transform: uppercase; }
+.btn {
+display: block; width: 100%; padding: 20px; margin-bottom: 12px;
+background-color: #ffffff; color: #333; text-decoration: none;
+border-radius: 12px; font-weight: 600; font-size: 16px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+</style>
+
+<!-- Service Worker Registration -->
+<script type="text/javascript">
+if ('serviceWorker' in navigator) {
+window.addEventListener('load', function() {
+navigator.serviceWorker.register('sw.js').then(function(registration) {
+console.log('ServiceWorker registration successful');
+}, function(err) {
+console.log('ServiceWorker registration failed: ', err);
+});
+});
+}
+</script>
+</head>
+<body>
+
+<header>Flying Gun Policies</header>
+
+<div class="container">
+<div class="section-title">General Regulations</div>
+<a class="btn" href="https://www.usconcealedcarry.com/resources/ccw_reciprocity_map/">CCW Reciprocity Map</a>
+<a class="btn" href="https://www.atf.gov/media/22376/download">NFA Form 20 (ATF)</a>
+<a class="btn" href="https://www.tsa.gov/travel/transporting-firearms-and-ammunition">TSA Policies</a>
+
+<div class="section-title">Airline Policies</div>
+<a class="btn" href="https://www.alaskaair.com/content/travel-info/baggage/special-baggage/transporting-firearms">Alaska Airlines</a>
+<a class="btn" href="https://www.aa.com/i18n/travel-info/baggage/firearms-and-ammunition.jsp">American Airlines</a>
+<a class="btn" href="https://www.flybreeze.com/support?a=Sporting-Equipment-Firearms---id--ntt_zScURLS2OFsLe8ahwg">Breeze Airlines</a>
+<a class="btn" href="https://www.delta.com/us/en/baggage/special-items/sporting-equipment#firearms">Delta Airlines</a>
+<a class="btn" href="https://www.hawaiianairlines.com/content/travel-info/baggage/special-baggage/transporting-firearms">Hawaiian Airlines</a>
+<a class="btn" href="https://www.united.com/en/us/fly/baggage/firearms.html">United Airlines</a>
+</div>
+
+</body>
+</html>
