@@ -16,7 +16,8 @@ const assets = [
   './allegiant-logo.png',
   './frontier-logo.png',
   './jetblue-logo.png',
-  './southwest-logo.png'
+  './southwest-logo.png',
+  './breeze-logo.png'
 ];
 
 // 1. Install Event (Downloads new files & forces takeover)
